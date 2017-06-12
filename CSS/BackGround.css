@@ -1,0 +1,6 @@
+body {
+  margin : 0;
+  padding : 0;
+  background-image: url("http://1-background.com/images/old-paper/old-paper-veined-light.jpg"); 
+  cursor : url('../Images/pencil.cur'),pointer
+}

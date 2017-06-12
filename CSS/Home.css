@@ -1,0 +1,23 @@
+* {
+  
+}
+
+.header {
+    text-align : center;
+    overflow : hidden;
+    border : 1px solid black;
+}
+
+.timeline {
+  overflow : hidden;
+}
+
+.timeline li {
+  font-family : "Times New Roman",Serif;
+}
+
+.timeline h2, h3 {
+  letter-spacing : 2px;
+  font-family : Arial, "Sans-Seriff";
+}
+
