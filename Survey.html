@@ -12,7 +12,7 @@
           <li><a href = "LandingPage.html">Home</a></li>
           <li><a href = "#">Applications</a></li>
           <li><a href = "Survey.html">Survey</a></li>
-          <li><a href = "#">Calendar</a></li>
+          <li><a href = "Calendar.html">Calendar</a></li>
           <li><a href = "Contact.html">Contact Us</a></li>
         </ul> <!--- end of sidebar -->
       </div> <!--- end of side container -->
@@ -24,10 +24,45 @@
           <fieldset>
             <legend>Visitor Info</legend>
             <p>Age:
-            <input type= "text" id = "age" age ="age"/>
+            <input type= "text" id = "age" name ="age"/>
             </p>
-          </fieldset>
+            <p>Gender:
+            <input id="female" type="radio" name="gender"
+            value="f" checked = "checked">
+            <label for="female">Female</label>
+            <input id="male" type="radio" name="gender"
+            value="m">
+            <label for="male">Male</label>
+            </p>
+            <p>How Would You Rate This Site?
+            <label for = "1">1</label>
+            <input id = "1" type = "radio" name = "rating" value = 1 />
+            
+            <label for = "2">2</label>
+            <input id = "2" type = "radio" name = "rating" value = 2 />
+            
+            <label for = "3">3</label>
+            <input id = "3" type = "radio" name = "rating" value = 3 />
+            
+            <label for = "4">4</label>
+            <input id = "4" type = "radio" name = "rating" value = 4 />
+            
+            <label for = "5">5</label>
+            <input id = "5" type = "radio" name = "rating" value = 5 />
+            
+            </p>
+            <input type = "Submit" name= "submit" value = "Submit"/>
+           </fieldset>
         </form>
+           <div id = "email">
+           <form action = "#">
+            <fieldset >
+              <legend>Sign Up for Updates!</legend>
+              <input type = "text" name = "email"/>
+              <input type = "submit" name = "subscribe" value = "Subscribe"
+            </fieldset>
+           </form>
+           </div>
       </div>
     </div> <!---End wrapper --->
   </body>

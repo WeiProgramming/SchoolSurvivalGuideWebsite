@@ -2,3 +2,9 @@ fieldset {
   width  : 500px;
   border-radius : 5px;
 }
+
+#email {
+  position :fixed;
+  bottom: 0;
+  left : 260px;
+}
