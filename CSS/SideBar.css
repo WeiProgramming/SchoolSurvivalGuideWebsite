@@ -23,7 +23,7 @@
 #sideBar li {
     margin-bottom : 40px;
     padding-left : 5px;
-    
+    font-size : 20px;
 }
 
 #sideBar a{
@@ -35,6 +35,29 @@
 
 #sideBar li:hover {
   background-color:white;
+}
+
+.dropbtn {
+  font-size: 20px;
+  border : none;
+  background-color: yellow;
+}
+
+.dropdown-content {
+  display : none;
+}
+
+.dropdown-content a{
+  display : block;
+  padding : 16px;
+}
+
+.dropdown-content a:hover {
+  background-color:gray;
+}
+
+#dropdown:hover .dropdown-content {
+  display : block;
 }
 
 
