@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href = "CSS/SideBar.css" rel = "stylesheet" type = "text/css"/>
+    <link href = "CSS/BackGround.css" rel = "stylesheet" type = "text/css"/>
+    <link href = "CSS/Calendar-Style.css" rel = "stylesheet" type = "text/css"/>
+    <title>To-Do App</title>
+    <style>
+
+      #todolist li {
+        list-style :none;
+        width : 400px;
+        border-right: 1px solid black;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding : 10px;
+        background-color : aqua;
+      }
+      
+      #add {
+        text-decoration:none;
+        color: black;
+        width: 250px;
+        height: 150px;
+        background-color: green;
+      }
+      #rm {
+        text-decoration:none;
+        color: black;
+        width: 250px;
+        height: 150px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class = "wrapper">
+      <div class= "navContainer"> 
+        <ul id = "sideBar">
+          <a href = "LandingPage.html"><li>Home</li></a>
+          <li id = "dropdown">Applications
+            <div class = "dropdown-content">
+            <a href = "CalculatorPageApp.html">Simple Calculator</a>
+            <a href = "ToDoListApp.html">Link 2</a>
+            <a href = "#">Link 3</a>
+            </div>
+          <li>
+          <a href = "Survey.html"><li>Survey</li></a>
+          <a href = "Calendar.html"><li>Calendar</li></a>
+          <a href = "Contact.html"><li>Contact Us</li></a>
+        </ul> <!--- end of sidebar -->
+      </div> <!--- end of side container -->
+      <h1>To-Do Application</h1>
+      <div id = "container">
+          <ul id = 'todolist'>
+            <li>Brush teeth</li>
+          </ul>
+          <div class = 'button'>
+            <input id = "textInput" type = "text" name = 'task' maxlength = "100"/>
+            <a href = '/addItem' id = 'add'> Add a task</a> </br>
+            <a href = '/addItem' id = 'rm'> Remove a task</a>
+          </div>
+      </div>
+    </div> <!---End wrapper --->
+    <script>
+      var elList = document.getElementById('todolist');
+      var addBtn = document.getElementById('add');
+      var rmBtn = document.getElementById('rm');
+      var inputted = document.getElementById('textInput');
+      
+      function addItem(e){
+        e.preventDefault();
+        var newItem = document.createElement('li');
+        var text = document.createTextNode(inputted.value);
+        console.log(inputted);
+        console.log(text);
+        newItem.appendChild(text);
+        elList.appendChild(newItem);
+      }
+      
+      function removeItem(e){
+        e.preventDefault();
+        var remItem = elList.lastElementChild;
+        elList.removeChild(remItem);
+      }
+     
+      addBtn.addEventListener('click', addItem, false);
+      rmBtn.addEventListener('click', removeItem,false);
+    </script>
+  </body>
+</html>
