@@ -37,13 +37,7 @@
   background-color:white;
 }
 
-.dropbtn {
-  font-size: 20px;
-  border : none;
-  background-color: yellow;
-}
-
-.dropdown-content {
+.hide {
   display : none;
 }
 
